@@ -29,4 +29,9 @@ public class ProductController {
         myList.add(myProduct);
         return myProduct;
     }
+    @GetMapping("/count")
+    public int getProductCount()
+    {
+        return myList.size();
+    }
 }
