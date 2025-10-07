@@ -19,6 +19,13 @@ public class ProductController {
         return "hello";
     }
 
+    @GetMapping("/getproduct")
+    public Product getProduct()
+    {
+        Product myProduct= new Product("Tv", 499);
+        return myProduct;
+    }
+
     // Returns all stored products
     @GetMapping("/getproducts")
     // Create a Product here
